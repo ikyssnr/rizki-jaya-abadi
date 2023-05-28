@@ -1,0 +1,498 @@
+:root {
+  --primary: red;
+  --bg: rgb(255, 255, 255);
+  --button: rgba(49, 161, 49, 0.993);
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roman", sans-serif;
+  background-color: var(--bg);
+  color: rgb(0, 0, 0);
+}
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 7%;
+  background-color: rgba(19, 17, 17, 0.925);
+  border-bottom: 1px solid rgba(109, 29, 29, 0.767);
+  position: fixed;
+  right: 0;
+  top: 0%;
+  left: 0;
+  z-index: 999;
+}
+
+.navbar .navbar1 a {
+  display: inline-block;
+  color: rgb(248, 243, 243);
+  margin: 0 1rem;
+  font-size: 1.3rem;
+}
+
+.navbar .navbarlogo img {
+  position: relative;
+}
+
+.navbar .navbar1 a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar1 a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+}
+
+.navbar .navbar1 a:hover::after {
+  transform: scaleX(0.5);
+}
+.navbar .navbar1.active {
+  right: 0;
+}
+.navbar .navex a {
+  color: rgb(255, 255, 255);
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.navbar .navex a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* BAWAH NAVBAR*/
+.banner {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(img/HEADER\ ATAS.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.banner .content {
+  padding: 1rem 7%;
+  min-width: 60rem;
+}
+
+.banner .content h1 {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.2;
+}
+
+.banner .content h1 span {
+  color: var(--primary);
+}
+
+.banner .content p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 1.4rem;
+  line-height: 1.2;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.banner .content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: rgb(250, 250, 250);
+  background-color: var(--button);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+/* end nav */
+
+/* Tentang Kami*/
+.about,
+.produk,
+.layanan,
+.products,
+.kontak {
+  padding: 10rem 7% 1.4rem;
+}
+
+.about h2,
+.layanan,
+.produk h2,
+.products h2,
+.kontak h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.about h2 span,
+.produk h2 span,
+.products h2 span,
+.kontak h2 span,
+.layanan h2 span {
+  color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+.about .row .about-img img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.about .row .content .btn {
+  margin-top: 1rem;
+  margin-left: 7rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  color: rgb(250, 250, 250);
+  background-color: var(--button);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/*layanan*/
+.layanan .row {
+  display: flex;
+}
+.layanan h2 {
+  margin-bottom: 6rem;
+}
+.layanan .row .about-img {
+  flex: 1 1 45rem;
+}
+.layanan .row .about-img img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.layanan .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.layanan .row .content h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.layanan .row .content p {
+  margin-bottom: 0.8rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.layanan .row .content .btn {
+  margin-top: 1rem;
+  margin-left: 7rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  color: rgb(250, 250, 250);
+  background-color: var(--button);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/*Produk*/
+
+.prorduk h2 {
+  margin: 1rem;
+}
+.produk p {
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 50rem;
+  margin: auto;
+}
+
+.produk .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.produk .row .menu-card {
+  text-align: center;
+}
+
+.produk .row .menu-card img {
+  border-radius: 20%;
+  width: 80%;
+  margin-top: 2.5rem;
+}
+.produk .row .menu-card h3 {
+  font-size: 2rem;
+}
+.produk .row .menu-card .menucard-title {
+  margin: 1.5rem auto 0.5rem;
+}
+
+.produk .row .menu-card .menucard-price {
+  font-size: 1.5rem;
+}
+/*kontak section*/
+.kontak .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: rgba(39, 39, 39, 0.151);
+  flex-wrap: wrap;
+}
+.kontak h2 {
+  margin-bottom: 0rem;
+}
+.kontak .row .maps {
+  width: 100%;
+  object-fit: cover;
+  flex: 1 1 45rem;
+}
+.kontak .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+
+.kontak .row .content h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.kontak .row .content p,
+.kontak .row a {
+  margin-bottom: 0.8rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #070707b9;
+}
+
+.kontak .row .content .btn {
+  margin-top: 2rem;
+  margin-left: 15rem;
+  display: inline-block;
+  padding: 1rem 1rem 1rem;
+  font-size: 1.2rem;
+  color: rgb(250, 250, 250);
+  background-color: var(--button);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.kontak .row .content .btn:hover {
+  background-color: var(--primary);
+}
+
+/*footer*/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 15rem;
+  align-items: center;
+  background-color: rgba(39, 39, 39, 0.151);
+  font-size: 1.5rem;
+  margin-bottom: rem;
+  margin-top: 3rem;
+  color: #000000;
+  padding-bottom: 2rem;
+}
+.container h2 {
+  margin-top: 2rem;
+}
+.container2 .row1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 10rem;
+  font-size: 2rem;
+}
+.container2 .row2 img {
+  width: 20rem;
+  height: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+  margin-right: 10rem;
+}
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  background-color: rgba(39, 39, 39, 0.151);
+  list-style: none;
+  margin-top: rem;
+  flex-wrap: wrap;
+}
+
+.container2 ul {
+  list-style: none;
+  text-align: auto;
+  flex-wrap: wrap;
+}
+.container2 .row {
+  display: flex;
+  list-style: none;
+  font-size: 2rem;
+}
+
+.container2 a:hover {
+  color: var(--primary);
+}
+.container2 a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+
+  padding: 1rem;
+}
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 70%;
+  }
+  .produk .row .produk-card img {
+    width: 30rem;
+    border-radius: 70%;
+    height: auto;
+  }
+
+  /* Tablet */
+  @media (max-width: 768px) {
+    html {
+      font-size: 50%;
+    }
+
+    .navbar {
+      flex-wrap: nowrap;
+    }
+    #hamburger-menu {
+      display: inline-block;
+    }
+
+    .navbar .navbar1 {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      background-color: #070707b9;
+      width: 30rem;
+      height: 100vh;
+      transition: 0.3s;
+    }
+
+    .navbar .navbar1.active {
+      right: 0;
+    }
+
+    .navbar .navbar1 a {
+      color: var(--bg);
+      display: block;
+      margin: 1.5rem;
+      padding: 0.5rem;
+      font-size: 2rem;
+    }
+
+    .navbar .navbar1 a::after {
+      transform-origin: 0 0;
+    }
+
+    .navbar .navbar1 a:hover::after {
+      transform: scaleX(0.2);
+    }
+
+    .about .row {
+      flex-wrap: wrap;
+    }
+
+    .about .row .about-img img {
+      height: 24rem;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .about .row .content {
+      padding: 0;
+    }
+
+    .about .row .content h3 {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+
+    .about .row .content p {
+      font-size: 1.6rem;
+    }
+
+    .produk p {
+      font-size: 1.2rem;
+    }
+    .about .row .content .btn {
+      margin-left: 30rem;
+    }
+  }
+
+  /* Mobile Phone */
+  @media (max-width: 460px) {
+    html {
+      font-size: 50%;
+    }
+
+    .banner .content h1 {
+      font-size: 3rem;
+    }
+    .about .row .content .btn {
+      margin-left: 18rem;
+    }
+  }
+  /* Media Queris */
+
+  /* Media Queries */
+}
