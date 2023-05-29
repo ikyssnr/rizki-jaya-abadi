@@ -460,12 +460,11 @@ footer .credit p {
   }
 
   /* Mobile Phone */
-  @media (max-width: 440px) {
+  @media (min-width: 440px) {
     html {
       font-size: 55%;
     }
   }
-  /* Media Queris */
+} /* Media Queris */
 
-  /* Media Queries */
-}
+/* Media Queries */
