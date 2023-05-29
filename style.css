@@ -464,17 +464,7 @@ footer .credit p {
     html {
       font-size: 55%;
     }
-    .menu .row .menu-card img {
-      border-radius: 8px;
-    }
   }
-  .banner .content h1 {
-    font-size: 3rem;
-  }
-  .about .row .content .btn {
-    margin-left: 18rem;
-  }
-
   /* Media Queris */
 
   /* Media Queries */
