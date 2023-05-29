@@ -12,7 +12,12 @@
   border: none;
   text-decoration: none;
 }
-
+.wafixed {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 999;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -28,8 +33,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 7%;
-  background-color: rgba(19, 17, 17, 0.925);
-  border-bottom: 1px solid rgba(109, 29, 29, 0.767);
+  background-color: rgba(255, 255, 255, 0.788);
+  border-bottom: 1px solid rgba(255, 18, 18, 0.753);
   position: fixed;
   right: 0;
   top: 0%;
@@ -39,13 +44,13 @@ body {
 
 .navbar .navbar1 a {
   display: inline-block;
-  color: rgb(248, 243, 243);
+  color: rgb(0, 0, 0);
   margin: 0 1rem;
   font-size: 1.3rem;
 }
 
 .navbar .navbarlogo img {
-  position: relative;
+  position: flex;
 }
 
 .navbar .navbar1 a:hover {
@@ -67,7 +72,7 @@ body {
   right: 0;
 }
 .navbar .navex a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   align-items: center;
   margin: 0 0.5rem;
 }
@@ -135,7 +140,7 @@ body {
 .layanan,
 .products,
 .kontak {
-  padding: 10rem 7% 1.4rem;
+  padding: 7rem 7% 1.4rem;
 }
 
 .about h2,
@@ -186,11 +191,11 @@ body {
   line-height: 1.6;
 }
 
-.about .row .content .btn {
+.about a .btn {
   margin-top: 1rem;
-  margin-left: 7rem;
+  margin-left: 0rem;
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   font-size: 1.4rem;
   color: rgb(250, 250, 250);
   background-color: var(--button);
@@ -201,9 +206,7 @@ body {
 /*layanan*/
 .layanan .row {
   display: flex;
-}
-.layanan h2 {
-  margin-bottom: 6rem;
+  flex-wrap: wrap;
 }
 .layanan .row .about-img {
   flex: 1 1 45rem;
@@ -233,7 +236,7 @@ body {
 
 .layanan .row .content .btn {
   margin-top: 1rem;
-  margin-left: 7rem;
+  margin-left: 0rem;
   display: inline-block;
   padding: 1rem 2rem;
   font-size: 1.4rem;
@@ -303,7 +306,7 @@ body {
 .kontak .row .content h3 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  margin-top: 2rem;
+  margin-top: rem;
 }
 
 .kontak .row .content p,
@@ -317,7 +320,7 @@ body {
 
 .kontak .row .content .btn {
   margin-top: 2rem;
-  margin-left: 15rem;
+  margin-left: 0rem;
   display: inline-block;
   padding: 1rem 1rem 1rem;
   font-size: 1.2rem;
@@ -332,66 +335,43 @@ body {
 }
 
 /*footer*/
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  gap: 15rem;
-  align-items: center;
-  background-color: rgba(39, 39, 39, 0.151);
-  font-size: 1.5rem;
-  margin-bottom: rem;
-  margin-top: 3rem;
-  color: #000000;
-  padding-bottom: 2rem;
-}
-.container h2 {
-  margin-top: 2rem;
-}
-.container2 .row1 {
-  display: flex;
-  flex-wrap: wrap;
-  padding-right: 10rem;
-  font-size: 2rem;
-}
-.container2 .row2 img {
-  width: 20rem;
-  height: 10rem;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 5rem;
-  margin-right: 10rem;
-}
-.container2 {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 1rem;
-  background-color: rgba(39, 39, 39, 0.151);
-  list-style: none;
-  margin-top: rem;
-  flex-wrap: wrap;
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 1rem;
 }
 
-.container2 ul {
-  list-style: none;
-  text-align: auto;
-  flex-wrap: wrap;
-}
-.container2 .row {
-  display: flex;
-  list-style: none;
-  font-size: 2rem;
+footer .socials {
+  padding: 1rem 0;
 }
 
-.container2 a:hover {
-  color: var(--primary);
+footer .socials a {
+  color: #f8f4f4;
+  margin: 1rem;
 }
-.container2 a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
 
-  padding: 1rem;
+footer .socials a:hover,
+footer .links a:hover {
+  color: white;
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: #f7f7f7;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit p {
+  color: white;
+  font-weight: 700;
 }
 
 /* Laptop */
@@ -422,7 +402,7 @@ body {
       position: absolute;
       top: 100%;
       right: -100%;
-      background-color: #070707b9;
+      background-color: rgba(253, 253, 253, 0.712);
       width: 30rem;
       height: 100vh;
       transition: 0.3s;
@@ -433,7 +413,7 @@ body {
     }
 
     .navbar .navbar1 a {
-      color: var(--bg);
+      color: black;
       display: block;
       margin: 1.5rem;
       padding: 0.5rem;
@@ -480,18 +460,21 @@ body {
   }
 
   /* Mobile Phone */
-  @media (max-width: 460px) {
+  @media (max-width: 450px) {
     html {
-      font-size: 50%;
+      font-size: 30%;
     }
-
-    .banner .content h1 {
-      font-size: 3rem;
-    }
-    .about .row .content .btn {
-      margin-left: 18rem;
+    .menu .row .menu-card img {
+      border-radius: 8px;
     }
   }
+  .banner .content h1 {
+    font-size: 3rem;
+  }
+  .about .row .content .btn {
+    margin-left: 18rem;
+  }
+
   /* Media Queris */
 
   /* Media Queries */
