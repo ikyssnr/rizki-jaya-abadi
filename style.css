@@ -388,7 +388,7 @@ footer .credit p {
   /* Tablet */
   @media (max-width: 768px) {
     html {
-      font-size: 50%;
+      font-size: 60%;
     }
 
     .navbar {
@@ -462,6 +462,7 @@ footer .credit p {
   /* Mobile Phone */
   @media (max-width: 450px) {
     html {
+      font-size: 50%;
     }
     .menu .row .menu-card img {
       border-radius: 8px;
