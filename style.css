@@ -14,7 +14,7 @@
 }
 .wafixed {
   position: fixed;
-  right: 30px;
+  left: 30px;
   bottom: 30px;
   z-index: 999;
 }
@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roman", sans-serif;
   background-color: var(--bg);
   color: rgb(0, 0, 0);
 }
@@ -99,7 +99,6 @@ body {
 
 .banner .content {
   padding: 1rem 7%;
-  min-width: 60rem;
 }
 
 .banner .content h1 {
@@ -379,9 +378,9 @@ footer .credit p {
   html {
     font-size: 70%;
   }
-  .produk .row .produk-card img {
+  .produk .row .menu-card img {
     width: 30rem;
-    border-radius: 70%;
+    border-radius: 8%;
     height: auto;
   }
 
@@ -460,11 +459,21 @@ footer .credit p {
   }
 
   /* Mobile Phone */
-  @media (max-width: 480px) {
+  @media (max-width: 460px) {
     html {
-      font-size: 55%;;
+      font-size: 50%;
     }
+    .menu .row .menu-card img {
+      border-radius: 8px;
+    }
+  }
+  .banner .content h1 {
+    font-size: 2rem;
+  }
+  .about .row .content .btn {
+    margin-left: 18rem;
+  }
 
-    /* Media Queries */
-    
-  } /* Media Queris */
+  /* Media Queris */
+  /* Media Queries */
+}
